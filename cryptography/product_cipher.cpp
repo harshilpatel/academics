@@ -11,6 +11,7 @@ int main(){
   cin >> key;
   cin >> plaintext;
   int size = plaintext.size();
+  cout << "Size of plaintext is: " << size << endl;
   // Ceaser cipher
   cout << "Substitution Cipher: Ceaser Cipher" << endl;
   for(int i=0; i<size;i++){
@@ -29,23 +30,10 @@ int main(){
   }
   cout << "Left Shift by 2: " << ciphertext2 << endl;
   // transposition cipher
-  string ciphertext3[size][2];
-  for(int i=0; i<size; i=i+2){
-    ciphertext3[0][i] = ciphertext2.at(i);
-    ciphertext3[1][i] = ciphertext2.at(i+1);
+  string ciphertext3;
+  for(signed int i=-2; i< (size*2)-2; i = i+2){
+    ciphertext3 += ciphertext2.at((i+2)%size);
   }
-  cout << "Rail Fence cipher: ";
-  for(int i=0; i<2; i++){
-    for(int j=0; j<size; j++){
-      cout << ciphertext3[i][j];
-    }
-  }
-  cout << endl;
-  // for(signed int i=-2; i< (size*2)-2; i = i+2){
-  //   ciphertext3 += ciphertext2.at((i+2)%size);
-  //   if (i%2 == 0){
-  //     if(i>size) i=i+1
-  //   }
-  // }
-
+  cout << "Rail Fence cipher: " << ciphertext3 << endl;
+  cout << "Product Cipher: " << ciphertext3 << endl;
 }
