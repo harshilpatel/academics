@@ -48,6 +48,7 @@ int main()
       cout << "net: " << net << " and o: " << o;
 
       if (o != d[i]){
+          correct_case = 0;
           cout<<"\nCalculated value not equal to Expected for iteration: " << i <<" \nHence updating weights to: ";
           for(int z=0; z<input_size; z++){
               w[z] = w[z] +  (alpha * (d[i] - o) * x[i][z]);
