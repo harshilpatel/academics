@@ -33,7 +33,6 @@ for i in range(len(p_split)):
 		for k in range(len(key[j])):
 			item += key[j][k] * temp[k]
 		result += a[item%26]
-		print p_split[i] + " " + str(item) + a[item%26]
 
 print "Cipher:  " + result
 print "p: " + str(len(p))
