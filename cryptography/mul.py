@@ -53,6 +53,6 @@ while True:
 for i in c:
 	pos = ( a.index(i) * t1) % 26
 	p += a[pos]
-	# print i + " " + str(pos)  + " " + a[pos]
+	print i + " " + str(pos)  + " " + a[pos]
 
 print "Reverse plaintext:  " + p
