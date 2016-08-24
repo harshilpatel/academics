@@ -33,7 +33,7 @@ int main()
   cout << "\nOutput: \n";
   int pos = -yl;
   while(! output.empty()){
-     cout << "y(" <<pos << ") : "<< output.front() << "\n";
+     cout << " y(" <<pos << ") : "<< output.front() << "\n";
      pos++;
      output.pop_front();
 	}
