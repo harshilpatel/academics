@@ -1,4 +1,4 @@
-// Example program
+// Initial implementation : Wrong output
 #include <iostream>
 #include <string>
 
@@ -29,7 +29,7 @@ int main()
     cout << "Enter zero positions of signals: ";
     cin >> x_zero >> y_zero;
 
-    
+        
     
     
     cout << "\nResultant signal: ";

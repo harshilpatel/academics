@@ -1,4 +1,4 @@
-// Example program
+// Initial implementation : Wrong output
 #include <iostream>
 #include <string>
 
