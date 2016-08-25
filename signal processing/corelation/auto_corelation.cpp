@@ -15,7 +15,7 @@ int main()
   cout << "Enter x(n): ";
   for(int i=0; i<xl; i++){
       cin >> x[i];
-      }   
+      }
   for(int i =-yl; i<yl; i++){
       int value = 0;
       for(int j=0; j<xl; j++){
@@ -34,4 +34,4 @@ int main()
 	}
  cout << "\n";
  return 0;
-} 
+}
