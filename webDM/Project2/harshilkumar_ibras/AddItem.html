@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>JBRA'S</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="SayItRight.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+    /* css styles */
+    /* Below style is to remove bullets for UL
+    Align link text to center
+    and set link text color to white*/
+        ul {
+  list-style-type: none;
+  color: white;
+  text-align: center;
+       }
+
+       body {
+  background-color: rgb(0, 0, 0);
+      }
+
+      #headerImage{
+        background-image: url("../images/hamburguesa7.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height:600px;
+        filter:brightness(50%)
+       
+      }
+
+      #footerImage{
+        background-image: url("../images/hamburguesa3.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        filter:brightness(50%)
+      }
+
+      .idControls{
+        column-count: 3;
+      }
+
+.form-style-1 {
+	margin:10px auto;
+	max-width: 900px;
+	padding: 20px 12px 10px 20px;
+	font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.form-style-1 li {
+	padding: 0;
+	display: block;
+	list-style: none;
+	margin: 10px 0 0 0;
+}
+
+textarea, 
+select{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border:1px solid #BEBEBE;
+	padding: 7px;
+	margin:0px;
+	outline: none;	
+}
+.form-style-1 .field-divided{
+	width: 49%;
+}
+.form-style-1 .field-long{
+	width: 100%;
+}
+.form-style-1 .field-select{
+	width: 100%;
+}
+.form-style-1 .field-textarea{
+	height: 100px;
+}
+
+.info{
+  text-align: center;
+  color: white;
+}
+
+.contactDiv{
+  text-align: center;
+}
+
+</style>
+</head>
+
+<body>
+<div id="headerImage">
+<header id="header">
+  <nav id="nav-bar"><br><br><br>
+     <ul>
+      <li>
+        <a href="home.html" id="active">Inicio</a>
+        <a href="about.html">Sobre Nosotros</a>
+        <a href="menu.html">Menu</a>
+        <a href="#">Blog</a>
+        <a href="contact.html">Contacto</a>
+        <a href="sign_up.html">Registro</a>
+        <a href="">Iniciar Sesion</a></li>
+      </li>
+    </ul>
+  </nav><br><br><br><br><br>
+<footer>
+</footer>
+</header>
+</div>
+<br><br><br><br><br>
+<div class="info">
+  <img src="../images/burguer.png" style="height: 30px;width: 30px;">
+  <h1>Hola</h1>
+  <p>Agregar elemento al menú</p>
+</div>
+  <form>
+    <ul class="form-style-1">
+        <li><input type="text" name="field1" class="field-divided" placeholder="Item Name" /> 
+            <input type="text" name="field2" class="field-divided" placeholder="Price" /></li>
+        <li>
+            <label>Select Image</label>
+            <input type="file" name="file" class="field-long" /> 
+            </select>
+        </li>
+        <li>
+            <textarea name="field5" id="field5" placeholder="Description" class="field-long field-textarea"></textarea>
+        </li>
+        <li>
+            <input type="submit" value="Enviar Mensaje" />
+        </li>
+    </ul>
+    </form>
+
+<div id="footerImage">
+  <div class="contactDiv">
+    <img src="../images/logo.png">
+    <p> Habla a:</p>
+    <p> Av. Intercomunal, sectro la Mora, calle 8</p>
+    <br>
+    <p> Telefono:</p>
+    <p> +58 251 261 00 01</p>
+    <br>
+    <p> Correo:</p>
+    <p> yourmail@gmail.com</p>
+    <br><br><br>
+    <p>Copyrignt @2020 Todos los drechos reservados | Este sitio esta hecho con ♡ por DiazApps</p>
+  </div>
+
+</div>
+</body>
+
+</html>
