@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="SayItRight.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style type="text/css">
     /* css styles */
@@ -92,7 +92,7 @@ select{
 </style>
 </head>
 
-<body>
+<body class="flex">
 <div id="headerImage">
 <header id="header">
   <nav id="nav-bar"><br><br><br>
@@ -116,21 +116,19 @@ select{
 <div class="info">
   <img src="../images/burguer.png" style="height: 30px;width: 30px;">
   <h1>Hola</h1>
-  <p>Informar de un problema</p>
+  <p>Agregar elemento al menú</p>
 </div>
   <form>
     <ul class="form-style-1">
-        <li><input type="text" name="field1" class="field-divided" placeholder="First" /> 
-            <input type="text" name="field2" class="field-divided" placeholder="Last" /></li>
+        <li><input type="text" name="field1" class="field-divided" placeholder="Item Name" /> 
+            <input type="text" name="field2" class="field-divided" placeholder="Price" /></li>
         <li>
-            <input type="email" name="field3" placeholder="Email" class="field-long" />
-        </li>
-        <li>
-            <input type="subject" name="subject" placeholder="Subject" class="field-long" /> 
+            <label>Select Image</label>
+            <input type="file" name="file" class="field-long" /> 
             </select>
         </li>
         <li>
-            <textarea name="field5" id="field5" placeholder="Problem Description" class="field-long field-textarea"></textarea>
+            <textarea name="field5" id="field5" placeholder="Description" class="field-long field-textarea"></textarea>
         </li>
         <li>
             <input type="submit" value="Enviar Mensaje" />
